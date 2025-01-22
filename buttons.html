@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        buttons
+    </title>
+    <head>
+        Buttons
+    </head>
+    <br>
+    <a href="https://www.facebook.com/">
+        <button 
+        style="font-size:25px;
+        font-family:poppins;
+        color:white;
+        background-color:rgb(44, 185, 51)">
+            click me
+        </button>
+    </a>
+
+    <body>
+        <button
+        onclick="doSomething()"
+        style="font-size:25px;
+        font-family:poppins;
+        color:white;
+        background-color:rgb(44, 185, 51)">
+            Click Me to change the word
+        </button>
+        <p id="greeting">Hello</p>
+        <script>
+            function doSomething()
+            {
+                document.getElementById("greeting").innerHTML="Goodbye";
+            }
+        </script>
+    </body>
+</html>
