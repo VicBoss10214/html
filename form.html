@@ -7,7 +7,7 @@
         <h1>Form</h1>
     </head>
     <hr>
-    <form action="index.php" method="POST">
+    <form action="index.php" method="POST" enctype="multipart/form-data">
         <label  for="username">Username:</label>
         <input type="text" id="username" minlength="6" maxlength="10" placeholder="Jameelvai" required><br>
         <label for="password">Password:</label>
@@ -17,9 +17,30 @@
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
         <label for="bday">Birthday:</label>
-        <input type="date" id="bday">
+        <input type="date" id="bday"> <br>
+        <label for="quantity">Quantity:</label>
+        <input id="quantity" type="numbers" value="10"><br>
+        <label for="sex">Sex:</label>
+        <label for="male">Male:</label>
+        <input type="radio" id="male" value="male" name="sex">
+        <label for="female">Female:</label>
+        <input type="radio" id="female" value="female" name="sex">
+        <label for="gay">Gay:</label>
+        <input type="radio" id="gay" value="gay" name="sex"><br>
+        <label for="payment">Payment Method: </label>
+        <select id="payment">
+            <option value="visa">Visa</option>
+            <option value="cash">Cash</option>
+            <option value="mastercard">Mastercard</option>
+        </select><br>
+        <label for="subs">Subscribe?</label>
+        <input type="checkbox" id="subs"><br>
+        <label for="comment">Share your Comment with us:</label><br>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+        <label for="file">Your image:</label>
+        <input type="file" id="file" accept="image/jpg,image/png"><br>
         <input type="submit"><br>
         <input type="reset"
-        
+
     </form>
 </html>
