@@ -1,0 +1,24 @@
+body{
+    background-color:rgb(0, 0, 0);
+}
+h1{
+    color:red;
+}
+#p1{
+    color:white;
+}
+#p2{
+    color:blue;
+}
+#p3{
+    color:brown;
+}
+#p4{
+    color:aqua;
+}
+.odd{
+    font-size:36px;
+}
+.even{
+    font-size:25px;
+}
